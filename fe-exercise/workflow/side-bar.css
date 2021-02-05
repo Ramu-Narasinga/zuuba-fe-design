@@ -1,0 +1,68 @@
+.h-l-1 {
+    display: grid;
+    grid-template-columns: 75% auto;
+    padding: 16px;
+    height: 40px;
+    align-items: center;
+}
+
+.hlt {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.hlp {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.h-l-2 {
+    padding: 16px;
+    height: 30px;
+    background: #EFEFEF 0% 0% no-repeat padding-box;
+    display: grid;
+    align-items: center;
+}
+
+.hlt-2 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.ca-els {
+    padding: 1.4em;
+}
+
+.ca {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.ca-sel select {
+    width: 100%;
+    border: 1px solid #E1E1E1;
+    border-radius: 2px;
+    /* height: 30px; */
+    font-family: "Open Sans";
+    font-size: 19px;
+    margin: 5px 0;
+    padding: 3px;
+    background: none;
+}
+
+.ca-el {
+    padding: 0 0 1.4em 0;
+}
+
+.ca-el .save-btn {
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    color: white;
+    font-family: 'Open Sans';
+    border: none;
+    width: 98px;
+    height: 30px;
+    font-weight: normal;
+    cursor: pointer;
+}
