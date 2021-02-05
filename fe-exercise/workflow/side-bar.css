@@ -4,6 +4,7 @@
     padding: 16px;
     height: 40px;
     align-items: center;
+    justify-content: center;
 }
 
 .hlt {
@@ -14,7 +15,9 @@
 .hlp {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: normal; */
+    position: relative;
+    top: 3px;
 }
 
 .h-l-2 {

@@ -102,3 +102,28 @@ html, body {
     position: relative;
     top: 2px;
 }
+
+.vl {
+    height: 30px;
+    width: px;
+}
+
+.delay {
+    height: 30px;
+    width: 30px;
+}
+
+.action {
+    height: 28px;
+    width: 28px;
+}
+
+.decision {
+    height: 27px;
+    width: 24px;
+}
+
+.exit {
+    height: 20px;
+    width: 16px;
+}
