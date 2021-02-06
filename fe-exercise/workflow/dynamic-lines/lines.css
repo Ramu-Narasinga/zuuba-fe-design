@@ -1,0 +1,68 @@
+#n4 {
+    /* margin-top: 8%; */
+    /* position: absolute;
+    left: 0; */
+    margin-right: 10px;
+    position: relative;
+    /* top: 16px; */
+}
+
+#n5 {
+    /* position: absolute;
+    right: 0; */
+    margin-left: 10px;
+    position: relative;
+}
+
+.ndp {
+    margin-top: 8%;
+    /* position: relative;
+    width: 81%; */
+}
+
+.ndp-c1 {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    /* bottom: 100%; */
+    top: 100%;
+}
+
+.node {
+    position: relative;
+}
+
+.plus {
+    position: absolute;
+    bottom: 10%;
+    left: 49.7%;
+}
+
+.mt-8p {
+    margin-top: 8%;
+}
+
+.mt-25p {
+    margin-top: 25%;
+}
+
+.pre-exit {
+    height: 17px;
+}
+
+.exit {
+    top: -56%;
+}
+
+.yb, .nb {
+    top: -95%;
+    /* left: 0; */
+}
+
+.yb {
+    left: 70%;
+}
+
+.nb {
+    left: 25%;
+}

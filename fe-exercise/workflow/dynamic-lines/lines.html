@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-position:absolute;overflow:visible!important;pointer-events:none!important;font-size:16px;="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../side-bar.css">
+    <link rel="stylesheet" href="../right.css">
+    <link rel="stylesheet" href="../dn.css">
+    <link rel="stylesheet" href="./css/line.css">
+    <link rel="stylesheet" href="lines.css">
+    <script src="../index.js"></script>
+    <script src="./js/leader-line.js"></script>
+    <script src="./js/anim-event.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">
+            <div class="back-nav">
+                <button>
+                    <img src="../assets/back.svg" alt="nav-back">
+                    <span>Back</span>
+                </button>
+            </div>
+            <div class="ws">
+                Workflow One
+            </div>
+            <div class="options">
+                <div class="opt rel-btn">
+                    <img src="../assets/undo.svg" alt="undo">
+                    <img src="../assets/redo.svg" alt="redo">
+                </div>
+                <div class="opt">
+                    <button>Start Workflow</button>
+                </div>
+                <div class="opt rel-btn">
+                    <img class="more" src="../assets/more.svg" alt="more">
+                </div>
+            </div>
+        </div>
+        <div class="inner-container">
+            <div class="left">
+                <div class="h-l-1">
+                    <div class="hlt">Action</div>
+                    <div class="hlp">
+                        <span class="h-opt-1">
+                            <img src="../assets/help.svg" alt="help">
+                        </span>
+                        <span class="h-opt-1">
+                            <img class="vl" src="../assets/vl.svg" alt="help">
+                        </span>
+                        <span class="h-opt-1">
+                            <img src="../assets/close.svg" alt="help">
+                        </span>
+                    </div>
+                </div>
+                <div class="h-l-2">
+                    <span class="hlt-2">Action to apply</span>
+                </div>
+                <div class="h-l-3">
+                    <div class="ca-els">
+                        <div class="ca-el">
+                            <div class="ca">Choose action</div>
+                            <div class="ca-sel">
+                                <select name="chooseTag" id="chooseTag">
+                                    <option value="Apply a tag">Apply a tag</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="ca-el">
+                            <div class="ca">Tag should we apply</div>
+                            <div class="ca-sel">
+                                <select name="applyTag" id="applyTag">
+                                    <option value="Apply a tag">Choose a tag</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="ca-el">
+                            <button class="save-btn">Save Action</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="nd n1 mt-3p node" id="n1">
+                    <img src="../assets/ic_subscribe.svg" alt="subscribe" class="sub-img">
+                    <span class="label">Subscribers registered to webinar</span>
+                    <div class="plus">
+                        <img src="../assets/nodes/plus_gray.svg" alt="line" class="plusg">
+                    </div>
+                </div>
+                <div class="nd n2 mt-3p node" id="n2">
+                    <img src="../assets/ic_delay.svg" alt="subscribe" class="sub-img delay">
+                    <span class="label">Delay</span>
+                    <div class="plus">
+                        <img src="../assets/nodes/plus_gray.svg" alt="line" class="plusg">
+                    </div>
+                </div>
+                <div class="nd n1 mt-3p node" id="n3">
+                    <img src="../assets/ic_action.svg" alt="action" class="sub-img action">
+                    <span class="label">Applied the “Completed program” tag</span>
+                </div>
+                <div class="ndp">
+                    <div class="nd ndpc mt-3p" id="n4">
+                        <div class="plus exit">
+                            <img src="../assets/nodes/plus_gray.svg" alt="line" class="plusg">
+                        </div>
+                        <div class="plusg nd yb">
+                            <span class="label">Yes</span>
+                        </div>
+                        <img src="../assets/ic_decision.svg" alt="decision" class="sub-img decision">
+                        <span class="label">Duis mauris augue, efficitur eu arcu sit amet, posuere</span>
+                    </div>
+                    <div class="nd ndpc mt-3p" id="n5">
+                        <div class="plus exit">
+                            <img src="../assets/nodes/plus_gray.svg" alt="line" class="plusg">
+                        </div>
+                        <div class="plusg nd nb">
+                            <span class="label">No</span>
+                        </div>
+                        <img src="../assets/ic_decision.svg" alt="decision" class="sub-img decision">
+                        <span class="label">Duis mauris augue, efficitur eu arcu sit amet, posuere</span>
+                    </div>
+                    <div class="ndp ndp-c1">
+                        <div class="ndpc mt-3p" id="n8">
+                            <div class="plus exit">
+                                <img src="../assets/nodes/plus_gray.svg" alt="line" class="plusg">
+                            </div>
+                            <div class="plusg nd yb">
+                                <span class="label">Yes</span>
+                            </div>
+                            <div class="nd n3">
+                                <img src="../assets/ic_delay.svg" alt="subscribe" class="sub-img delay">
+                                <span class="label">Delay</span>
+                            </div>
+                        </div>
+                        <div class=" ndpc mt-3p" id="n9">
+                            <div class="plus exit">
+                                <img src="../assets/nodes/plus_gray.svg" alt="line" class="plusg">
+                            </div>
+                            <div class="plusg nd nb">
+                                <span class="label">No</span>
+                            </div>
+                            <div class="nd n3">
+                                <img src="../assets/ic_delay.svg" alt="subscribe" class="sub-img delay">
+                                <span class="label">Delay</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pre-exit mt-25p node vh" id="n6">
+                    <!-- <img src="../assets/ic_exit.svg" alt="subscribe" class="sub-img exit">
+                    <span class="label">Exit</span> -->
+                </div>
+                <div class="nd n1 node" id="n7">
+                    <div class="plus exit">
+                        <img src="../assets/nodes/plus_gray.svg" alt="line" class="plusg">
+                    </div>
+                    <img src="../assets/ic_exit.svg" alt="subscribe" class="sub-img exit">
+                    <span class="label">Exit</span>
+                </div>
+            </div>
+            <script>
+                window.addEventListener('load', function() {
+                  'use strict';
+                  window["l1"] = new LeaderLine(
+                    document.getElementById('n1'),
+                    document.getElementById('n2')
+                  );
+
+                  window["l1"]
+                  .setOptions({
+                        // middleLabel: LeaderLine.pathLabel('plus'),
+                        endPlug: 'behind',
+                        color: 'rgb(112, 112, 112)'
+                    })
+                  .size = 2;
+
+                  window["l2"] = new LeaderLine(
+                    document.getElementById('n2'),
+                    document.getElementById('n3')
+                  );
+
+                  window["l2"]
+                  .setOptions({
+                        // middleLabel: LeaderLine.pathLabel('plus'),
+                        endPlug: 'behind',
+                        color: 'rgb(112, 112, 112)'
+                    })
+                  .size = 2;
+
+                  window["l3"] = new LeaderLine(
+                    document.getElementById('n3'),
+                    document.getElementById('n4')
+                  );
+
+                  window["l3"]
+                  .setOptions({
+                        startSocket: 'bottom', 
+                        endSocket: 'top',
+                        endPlug: 'behind',
+                        color: 'rgb(112, 112, 112)'
+                  })
+                  .size = 2;
+
+                  window["l4"] = new LeaderLine(
+                    document.getElementById('n3'),
+                    document.getElementById('n5')
+                  );
+
+                  window["l4"].setOptions({
+                        startSocket: 'bottom', 
+                        endSocket: 'top',
+                        endPlug: 'behind',
+                        color: 'rgb(112, 112, 112)'
+                  })
+                  .size = 2;
+
+                  window["l5"] = new LeaderLine(
+                    document.getElementById('n4'),
+                    document.getElementById('n6')
+                  )
+
+                  window["l5"].setOptions({
+                        startSocket: 'bottom', 
+                        endSocket: 'top',
+                        endPlug: 'behind',
+                        color: 'rgb(112, 112, 112)'
+                  })
+                  .size = 2;
+
+                //   new LeaderLine(
+                //     document.getElementById('n5'),
+                //     document.getElementById('n6')
+                //   )
+                //   .setOptions({
+                //         startSocket: 'bottom', 
+                //         endSocket: 'top',
+                //         endPlug: 'behind',
+                //         color: 'rgb(112, 112, 112)'
+                //   })
+                //   .size = 2;
+                window["l6"] = new LeaderLine(
+                    document.getElementById('n5'),
+                    document.getElementById('n8')
+                  );
+                  
+                window["l6"]
+                  .setOptions({
+                        startSocket: 'bottom', 
+                        endSocket: 'top',
+                        endPlug: 'behind',
+                        color: 'rgb(112, 112, 112)'
+                  })
+                  .size = 2;
+
+                  window["l7"] = new LeaderLine(
+                    document.getElementById('n8'),
+                    document.getElementById('n7')
+                  );
+
+                  window["l7"]
+                  .setOptions({
+                        // middleLabel: LeaderLine.pathLabel('plus'),
+                        startSocket: 'bottom', 
+                        endSocket: 'top',
+                        endPlug: 'behind',
+                        color: 'rgb(112, 112, 112)'
+                    })
+                  .size = 2;
+
+                  window["l8"] = new LeaderLine(
+                    document.getElementById('n9'),
+                    document.getElementById('n7')
+                  );
+
+                  window["l8"]
+                  .setOptions({
+                        // middleLabel: LeaderLine.pathLabel('plus'),
+                        startSocket: 'bottom', 
+                        endSocket: 'top',
+                        endPlug: 'behind',
+                        color: 'rgb(112, 112, 112)'
+                    })
+                  .size = 2;
+
+                  window["l9"] = new LeaderLine(
+                    document.getElementById('n5'),
+                    document.getElementById('n9')
+                  );
+
+                  window["l9"]
+                  .setOptions({
+                        startSocket: 'bottom', 
+                        endSocket: 'top',
+                        endPlug: 'behind',
+                        color: 'rgb(112, 112, 112)'
+                  })
+                  .size = 2;
+
+                //   window["l10"] = new LeaderLine(
+                //     document.getElementById('n6'),
+                //     document.getElementById('n7')
+                //   );
+
+                //   window["l10"]
+                //   .setOptions({
+                //         // middleLabel: LeaderLine.pathLabel('plus'),
+                //         endPlug: 'behind',
+                //         color: 'rgb(112, 112, 112)'
+                //     })
+                //   .size = 2;
+                });
+                // add scroll adjust event listeners
+                document.getElementsByClassName("right")[0].addEventListener('scroll', AnimEvent.add(() =>  {
+                    window["l1"].position();
+                    window["l2"].position();
+                    window["l3"].position();
+                    window["l4"].position();
+                    window["l5"].position();
+                    window["l6"].position();
+                    window["l7"].position();
+                    window["l8"].position();
+                    window["l9"].position();
+                    // window["l10"].position();
+                }), false);
+            </script>
+        </div>
+    </div>
+  </body>
+</html>

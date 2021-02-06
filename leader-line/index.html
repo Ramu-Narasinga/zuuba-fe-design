@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="description" content="Draw a leader line in your web page.">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="./css/line.css">
+            <script src="js/leader-line.js"></script>
+            <title>LeaderLine</title>
+    </head>
+    <body>
+        <div class="stage" style="width: 400px; height: 400px;">
+            <div id="ex-010-1" class="anchor80-line" style="right: 0">end</div>
+            <div id="ex-010-0" class="anchor80-line" style="left: 280px; top: 200px;">start</div>
+            <div id="ex-010-2" class="anchor80-line" style="right: -120px;top: 200px;">N1</div>
+          </div>
+          <script>
+            window.addEventListener('load', function() {
+              'use strict';
+            
+              new LeaderLine(
+                document.getElementById('ex-010-1'),
+                document.getElementById('ex-010-0')
+              );
+
+              new LeaderLine(
+                document.getElementById('ex-010-1'),
+                document.getElementById('ex-010-2')
+              );
+            
+            });
+        </script>
+    </body>
+</html>
